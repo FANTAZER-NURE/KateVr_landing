@@ -1,0 +1,497 @@
+@import "../utils/mixins.scss";
+@import "../utils/vars.scss";
+
+.checkout {
+
+  padding: 65px 235px 120px;
+
+  @include laptop {
+    padding: 65px 110px 95px;
+  }
+
+  @include tablet {
+    padding: 30px 34px 60px;
+  }
+
+  @include mobile {
+    padding: 20px 20px 37px;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    @include tablet {
+      position: static;
+    }
+
+    @include mobile {
+      position: static;
+    }
+  }
+
+  &__logo {
+    
+    @include tablet {
+      margin-bottom: 65px;
+      height: fit-content;
+    }
+
+    @include mobile {
+      margin-bottom: 86px;
+      height: fit-content;
+      grid-row: 1 / 2;
+    }
+  }
+
+  &__cross {
+    justify-self: end;
+    height: fit-content;
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+
+    @include mobile {
+      display: block;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+  }
+
+  &__link {
+
+    padding-bottom: 10px;
+    transition: $transition;
+    width: fit-content;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &--active {
+      color: $blue;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: $blue;
+        margin: 0 auto;
+      }
+
+      @include tablet {
+
+        &::after {
+          display: none;
+        }
+
+        border-bottom: 1px solid $blue;
+        flex-basis: 33%;
+      }
+
+      @include mobile {
+
+        &::after {
+          display: none;
+        }
+
+        border-bottom: 1px solid $blue;
+        flex-basis: 33%;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    text-align: center;
+
+    & .checkout__link {
+      color: $lightGray;
+
+      &--active {
+        color: $blue;
+      }
+    }
+
+    @include laptop {
+      grid-column: 4 / 13;
+      margin-bottom: 100px;
+    }
+
+    @include tablet {
+      margin-bottom: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 80px;
+
+      & .checkout__link {
+        flex-basis: 33%;
+      }
+    }
+
+    @include mobile {
+      margin-bottom: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 65px;
+
+      & .checkout__link {
+        flex-basis: 33%;
+      }
+    }
+    
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 306px;
+    transform: translateX(-30%);
+    max-height: 447px;
+    z-index: 1;
+
+    @include laptop {
+      height: 279px;
+      top: 225px;
+      transform: translateX(-20%);
+    }
+
+    @include tablet {
+      position: static;
+      transform: translateX(0);
+      width: 100%;
+      max-height: 277px;
+      object-fit: contain;
+      grid-column: 1 / 7;
+    }
+
+    @include mobile {
+      position: static;
+      transform: translateX(0);
+      width: 100%;
+      max-height: 172px;
+      object-fit: contain;
+      grid-column: 1 / 3;
+      display: none;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+    z-index: 2;
+    margin-bottom: 100px;
+    position: relative;
+
+    @include laptop {
+      grid-column: 7 / 13;
+      margin-bottom: 30px;
+    }
+
+    @include tablet {
+      grid-column: 1 / 7;
+      margin-bottom: 60px;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+      margin-bottom: 40px;
+      position: static;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__invalid {
+    color: #860404;
+    height: fit-content;
+    // position: absolute;
+    // bottom: 20px;
+    // left: 40%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+    display: none;
+
+    &--active {
+      display: block;
+    }
+
+    @include tablet {
+      grid-column: 2 / 6;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $darkGray;
+    margin-bottom: 40px;
+
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $lightGray;
+    transition: $transition;
+
+    &:hover {
+      border-bottom: 1px solid $white;
+    }
+
+    &:focus {
+      border-bottom: 1px solid $blue;
+      color: $white;
+    }
+
+    &--invalid {
+      border-bottom: 1px solid #860404;
+      color: $white;
+    }
+
+  }
+
+  &__select {
+    width: 100%;
+    background: #191536;
+    border: none;
+    margin-bottom: 40px;
+    text-align: center;
+    height: 47px;
+    line-height: 47px;
+    outline: none;
+
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $lightGray;
+    transition: $transition;
+    // appearance: none;
+
+    // background-image: url(../images/arrow-down.svg);
+    // background-repeat: no-repeat;
+    // background-position: right 20px bottom auto;
+  }
+
+  &__text {
+    color: $lightGray;
+    margin-bottom: 13px;
+  }
+
+  &__button {
+    width: 120%;
+    height: 48px;
+    line-height: 48px;
+    align-self: end;
+    cursor: pointer;
+
+    @include laptop {
+      grid-column: 7 / 9;
+
+      &--2 {
+        grid-column: 6 / 8;
+      }
+    }
+
+    @include tablet {
+      grid-column: 2 / 6;
+      width: 100%;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+      width: 100%;
+    }
+  }
+
+  &__quantity {
+    grid-row: 3 / 4;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+    & .checkout__select {
+      margin-bottom: 0;
+    }
+
+    @include tablet {
+      grid-column: 2 / 3;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    @include mobile {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      margin-bottom: 30px;
+      justify-self: center;
+    }
+  
+  }
+
+  &__price {
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      grid-column: 4 / 6;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    @include mobile {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin-bottom: 30px;
+      justify-self: center;
+    }
+  }
+
+  &__card {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    & .checkout__input {
+      margin-bottom: 0;
+    }
+
+    @include laptop {
+      grid-column: 7 / 13;
+    }
+
+    @include tablet {
+      grid-column: 2 / 6;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__cardno {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: center;
+
+    & .checkout__input {
+      text-align: center;
+      padding-bottom: 6px;
+      font-size: 20px;
+    }
+
+    @include tablet {
+      gap: 32px;
+    }
+
+    @include mobile {
+      gap: 22px;
+    }
+  }
+
+  &__card-img {
+    object-fit: contain;
+    align-self: start;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__cardinfo {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 90px;
+
+    & .checkout__input {
+      text-align: center;
+      padding-bottom: 6px;
+      font-size: 20px;
+    }
+
+    @include laptop {
+      width: 70%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__cardinfo-text {
+    color: $lightGray;
+    margin-bottom: 17px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    text-align: center;
+    font-size: 46px;
+
+    @include laptop {
+      grid-column: 3 / 11;
+      margin-bottom: 36px;
+    }
+
+    @include tablet {
+      grid-column: 1 / 7;
+      margin-bottom: 20px;
+      margin-top: 180px;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+      margin-bottom: 16px;
+      font-size: 26px;
+      margin-top: 90px;
+    }
+  }
+
+  &__posttext {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 70px;
+
+    @include laptop {
+      grid-column: 2 / 12;
+      margin-bottom: 50px;
+    }
+
+    @include tablet {
+      grid-column: 1 / 7;
+      margin-bottom: 50px;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+  }
+
+}

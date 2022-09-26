@@ -1,0 +1,123 @@
+@import "../utils/mixins.scss";
+@import "../utils/vars.scss";
+
+.footer {
+  
+  padding: 43px 234px;
+  background: #05040b;
+
+  @include laptop {
+    padding: 43px 110px;
+  }
+
+  @include tablet {
+    padding: 25px 34px;
+  }
+
+  @include tablet {
+    padding: 25px 34px;
+  }
+
+  @include mobile {
+    padding: 45px 20px;
+  }
+
+  &__logo {
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+
+    @include laptop {
+      grid-column: 5 / 9;
+    }
+
+    @include tablet {
+      grid-column: 2 / 6;
+      width: 70%;
+      justify-self: center;
+    }
+  
+    @include mobile {
+      grid-column: 1 / 2;
+      flex-direction: column;
+    }
+
+  }
+
+  &__mobile {
+    display: none;
+    align-self: center;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__info {
+    font-size: 13px;
+    color: $lightGray;
+    display: block;
+  }
+
+  &__link {
+    color: $white;
+    transition: $transition;
+    padding-bottom: 10px;
+
+    &:hover {
+      color: $blue;
+    }
+
+  }
+
+  &__socials {
+    display: flex;
+    justify-self: end;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+
+    @include laptop {
+      grid-column: 11 / 13;
+    }
+
+    @include tablet {
+      grid-column: 6 / 7;
+    }
+  
+    @include mobile {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      justify-self: center;
+      align-self: end;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-self: end;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &__path {
+    transition: $transition;
+  }
+
+  &__icon {
+
+    &:hover .footer__path {
+      fill: $blue;
+    }
+  }
+
+}

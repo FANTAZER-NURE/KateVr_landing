@@ -1,0 +1,122 @@
+@import "../utils/mixins.scss";
+@import "../utils/vars.scss";
+
+.why {
+  padding: 160px 234px;
+
+  @include laptop {
+    padding: 100px 107px;
+  }
+
+  @include tablet {
+    padding: 70px 38px;
+  }
+
+  @include mobile {
+    padding: 50px 22px;
+  }
+
+  &__title {
+    margin-bottom: 85px;
+
+    @include laptop {
+      grid-column: 5 / 9;
+    }
+
+    @include tablet {
+      grid-column: 1 / 3;
+      font-size: 21px;
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+      font-size: 21px;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 20px;
+    color: $white;
+    transition: $transition;
+
+    @include mobile {
+      margin-bottom: 11px;
+    }
+  }
+
+  &__text {
+    color: $lightGray;
+  }
+
+  &__card {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    grid-row: 3 / 4;
+    min-height: 320px;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:hover .why__card-title {
+      color: $blue;
+    }
+
+    @include laptop {
+
+      &--1 {
+        grid-column: 1 / 5;
+      }
+
+      &--2 {
+        grid-column: 5 / 9;
+      }
+
+      &--3 {
+        grid-column: 9 / 12;
+      }
+
+    }
+
+    @include tablet {
+
+      align-self: start;
+
+      &--1 {
+        grid-column: 1 / 3;
+        margin-bottom: 40px;
+      }
+
+      &--2 {
+        grid-column: 3 / 5;
+
+      }
+
+      &--3 {
+        grid-column: 5 / 7;
+        margin-bottom: 40px;
+      }
+
+    }
+
+    @include mobile {
+      grid-column: 1 / 3;
+      margin-bottom: 20px;
+      grid-row: auto;
+      min-height: 0;
+    }
+  }
+
+  &__img {
+    margin-bottom: 21px;
+    justify-self: flex-start;
+
+    @include mobile {
+      display: none;
+    }
+  }
+}

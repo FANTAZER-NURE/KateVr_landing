@@ -1,7 +1,41 @@
 @import "utils";
-@import "fonts";
+// @import "fonts";
 @import "typography";
+@import "./normalize.scss";
+@import "./blocks/grid.scss";
+@import "./blocks/container.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/header.scss";
+@import "./blocks/button.scss";
+@import "./blocks/gaming.scss";
+@import "./blocks/product.scss";
+@import "./blocks/about.scss";
+@import "./blocks/tech.scss";
+@import "./blocks/why.scss";
+@import "./blocks/contact.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/checkout.scss";
 
-body {
-  background: $c-gray;
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #014954;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $blue;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-track-piece {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $white;
 }

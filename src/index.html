@@ -3,11 +3,1258 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>KatVr</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="icon" href="./images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <script src="./scripts/main.js" defer></script>
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+
+    <header class="header" id="main">
+      <div class="container grid header__wrapper">
+
+        <nav class="nav header__top grid__item grid__item--1-2">
+          <ul class="ul">
+            <li>
+              <a href="#main" class="header__link">
+                <img
+                  src="./images/logo.svg"
+                  alt="logo"
+                  class="header__logo"
+                >
+              </a>
+            </li>
+            <li >
+              <a class="header__lang" href="#0">En 
+                <svg
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="header__path"
+                    d="M4.43648 5.38769L0.483929 0.979532L8.38903 0.979533L4.43648 5.38769Z"
+                    fill="#05C2DF"
+                  >
+                  </path>
+                </svg>
+              </a>
+              <ul>
+                <li><a href="#0">Ua</a></li>
+                <li><a href="#0">Pl</a></li>
+                <li><a href="#0">De</a></li>
+                
+              </ul>
+            </li>
+            
+          </ul>
+        </nav>
+
+        <nav class="header__nav grid__item grid__item--11-16">
+          <a href="#about" class="header__link">About</a>
+          <a href="#tech" class="header__link">Tech</a>
+          <a href="#benefits" class="header__link">Benefits</a>
+          <a href="#contact" class="header__link">Contact</a>
+
+          <a href="./checkout1.html" class="header__button button">Buy Now</a>
+
+        </nav>
+
+
+        <!--    MENU     -->
+
+        <div class="header__menu menu menu--mobile grid__item grid__item--4-5" id="menu-container">
+          <a id="header-burger" class="menu__btn">
+            <span></span>
+          </a>
+          <ul class="menu__box">
+
+            <li>
+              <a
+                class="menu__item header__link"
+                href="#about"
+                id="item1"
+              >
+              About
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="menu__item header__link"
+                href="#tech"
+                id="item2"
+              >
+              Tech
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="menu__item header__link"
+                href="#benefits"
+                id="item3"
+              >
+              Benefits
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="menu__item header__link"
+                href="#contact"
+                id="item4"
+              >
+              Contact
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="menu__item header__link"
+                href="#"
+                id="item5"
+              >
+              Language
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="menu__item header__link"
+                href="#"
+                id="item6"
+              >
+              FAQ
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="menu__item header__link"
+                href="#"
+                id="item7"
+              >
+              Help
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+
+
+        <h1 class="header__title grid__item grid__item--1-7">
+          THE NEW START OF
+          <span class="text-2 header__title--2">VR LOCOMOTION</span>
+        </h1>
+
+        <p class="header__text text1 grid__item grid__item--2-6">Discover the most comprehensive VR Locomotion system, and unlock infinite motion in any games on any platforms!</p>
+
+        <p class="header__price grid__item grid__item--2-2">1200$</p>
+
+        <a
+          target="_blank"
+          href="https://www.youtube.com/watch?v=9fgN9BKal2Q"
+          class="header__play header__link grid__item grid__item--2-4"
+        >
+          <img
+            src="./images/play.svg"
+            alt="btn"
+            class="header__icon"
+          >
+        </a>
+
+        <nav class="header__footer grid__item grid__item--1-16">
+          <div class="header__footer-left">
+            <a href="#" class="header__link header__link--faq">FAQ</a>
+            <a href="#" class="header__link header__link--help">Help</a>
+          </div>
+
+          <div class="header__footer-center">
+            <a href="#" class="header__link">
+              More
+            </a>
+            <img
+              src="./images/arrow-down.svg"
+              alt="arrow"
+              class="footer__arrow"
+            >
+          </div>
+
+          <div class="header__footer-right">
+            <a
+              href="#"
+              class="header__link header__link--active"
+              id="headerLink1"
+            >
+              Previous
+            </a>
+            <a
+              href="#"
+              class="header__link"
+              id="headerLink2"
+            >
+              Next
+            </a>
+          </div>
+        </nav>
+
+        <a href="./checkout1.html" class="header__button header__button--mobile button">Buy Now</a>
+
+
+
+        <!--  FAQ   -->
+
+
+        <div class="header__faq faq">
+
+          <h2 class="faq__title">
+            FREQUENTLY ASKED
+            <span class="text-blue faq__title">QUESTIONS</span>
+          </h2>
+
+          <svg
+              width="19"
+              height="19"
+              viewBox="0 0 19 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="faq__svg faq__cross"
+              id="faqCross"
+            >
+            <line
+                x1="1.35355"
+                y1="0.995568"
+                x2="18.2206"
+                y2="17.8626"
+                stroke="white"
+                class="faq__path"
+              >
+              </line>
+
+            <path
+                d="M1.13405 17.8672L18.0011 1.00011" 
+                stroke="white"
+                class="faq__path"
+              >
+              </path>
+          </svg>
+
+          <div class="faq__question">
+
+            <img
+              src="./images/arrow-right.svg"
+              alt="arrow"
+              class="faq__arrow faq__arrow--1"
+            >
+
+            <p class="faq__text text-blue">What makes KAT loco different from other systems?</p>
+
+            <p class="faq__info text1">
+              Despite being approached from many different angles, all traditional VR Locomotion systems including roomscale, teleportation, and free locomotion failed to provide an optimal solution capable of integrating high immersion with convenience. KAT loco does all of that without repeating their flaws. Our system offers a complete and versatile solution for an affordable price what makes it a perfect choice for home-use. It is also 100% user friendly, wireless, universally compatible, and more! It even offers decoupled head and body directions!
+            </p>
+
+            <p class="faq__update text2">Last updated: Wed, June 12 2019 7:07 PM UTC +03:00</p>
+          </div>
+
+          <div class="faq__question">
+
+            <img
+              src="./images/arrow-right.svg"
+              alt="arrow"
+              class="faq__arrow faq__arrow--2"
+            >
+
+            <p class="faq__text text-blue">Will it decrease my motion sickness?</p>
+
+            <p class="faq__info text1">
+              Despite being approached from many different angles, all traditional VR Locomotion systems including roomscale, teleportation, and free locomotion failed to provide an optimal solution capable of integrating high immersion with convenience. KAT loco does all of that without repeating their flaws. Our system offers a complete and versatile solution for an affordable price what makes it a perfect choice for home-use. It is also 100% user friendly, wireless, universally compatible, and more! It even offers decoupled head and body directions!
+            </p>
+
+            <p class="faq__update text2">Last updated: Wed, June 12 2019 7:07 PM UTC +03:00</p>
+          </div>
+
+          <div class="faq__question">
+
+            <img
+              src="./images/arrow-right.svg"
+              alt="arrow"
+              class="faq__arrow faq__arrow--3"
+            >
+
+            <p class="faq__text text-blue">Which VR headsets is it compatible with?</p>
+
+            <p class="faq__info text1">
+              Despite being approached from many different angles, all traditional VR Locomotion systems including roomscale, teleportation, and free locomotion failed to provide an optimal solution capable of integrating high immersion with convenience. KAT loco does all of that without repeating their flaws. Our system offers a complete and versatile solution for an affordable price what makes it a perfect choice for home-use. It is also 100% user friendly, wireless, universally compatible, and more! It even offers decoupled head and body directions!
+            </p>
+
+            <p class="faq__update text2">Last updated: Wed, June 12 2019 7:07 PM UTC +03:00</p>
+          </div>
+
+          <div class="faq__question">
+
+            <img
+              src="./images/arrow-right.svg"
+              alt="arrow"
+              class="faq__arrow faq__arrow--4"
+            >
+
+            <p class="faq__text text-blue">Is it compatible with Oculus Quest?</p>
+
+            <p class="faq__info text1">
+              Despite being approached from many different angles, all traditional VR Locomotion systems including roomscale, teleportation, and free locomotion failed to provide an optimal solution capable of integrating high immersion with convenience. KAT loco does all of that without repeating their flaws. Our system offers a complete and versatile solution for an affordable price what makes it a perfect choice for home-use. It is also 100% user friendly, wireless, universally compatible, and more! It even offers decoupled head and body directions!
+            </p>
+
+            <p class="faq__update text2">Last updated: Wed, June 12 2019 7:07 PM UTC +03:00</p>
+          </div>
+        </div>
+
+
+        <!--   HELP   -->
+
+        <div class="header__help help">
+
+          <h2 class="help__title">
+            HOW CAN WE 
+            <span class="text-blue help__title">HELP</span>
+            YOU
+          </h2>
+
+          <svg
+              width="19"
+              height="19"
+              viewBox="0 0 19 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="help__svg help__cross"
+              id="helpCross"
+            >
+            <line
+                x1="1.35355"
+                y1="0.995568"
+                x2="18.2206"
+                y2="17.8626"
+                stroke="white"
+                class="help__path"
+              >
+              </line>
+
+            <path
+                d="M1.13405 17.8672L18.0011 1.00011" 
+                stroke="white"
+                class="help__path"
+              >
+              </path>
+          </svg>
+
+          <p class="help__text text1">
+            Welcome to our help center. Our goal is to make the process of 
+            getting acquainted and purchase as easy and pleasant as possible. Need help with your KAT VR loco product? Many product questions can be resolved by reviewing our Product Support <a href="#" class="help__link help__faq text-blue">FAQs</a>.
+
+            <br>
+            <br>
+
+            Please also feel free to <a href="#contact" class="help__link text-blue">Contact Us</a> directly should you need anything further. We’re happy to help.
+
+          </p>
+
+          <div class="help__bottom">
+
+            <div class="help__links">
+              <a href="#" class="help__link text-blue">Instruction manual</a>
+              <a href="#" class="help__link text-blue">Where to go for a warranty</a>
+              <a href="#" class="help__link text-blue">Service Policy</a>
+            </div>
+
+            <p class="help__info text1 grid__item grid__item--1-3">
+            
+              <a
+                href="tel:+86-0571-86105373"
+                class="help__link"
+                target="_blank"
+              >
+                +86-0571-86105373
+              </a>
+              <a
+                href="https://www.kat-vr.com/"
+                class="help__link"
+                target="_blank"
+              >
+                global@katvr.com
+              </a>
+              <a
+                href="mailto:overseas@katvr.com"
+                class="help__link"
+                target="_blank"
+              >
+                overseas@katvr.com
+              </a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+
+    <main>
+
+      <section class="gaming">
+        <div class="container grid gaming__wrapper">
+
+          <h2 class="gaming__title grid__item grid__item--7-10">MORE THAN <span class="text-blue gaming__title">GAMING!</span></h2>
+
+          <p class="text2 gaming__suptitle grid__item grid__item--7-10">This also made for people who are interested in...</p>
+
+          <a href="#" class="gaming__card gaming__card--1 grid__item grid__item--1-4">
+            <img
+              src="./images/gaming1.svg"
+              alt="img"
+              class="gaming__img"
+            >
+
+            <h3 class="gaming__card-title">EDUCATION</h3>
+
+            <p class="text1 gaming__text">Create aducational simulations, trainings and much more with unlimited virtual space and minimum physical space</p>
+
+          </a>
+
+          
+          <a href="#" class="gaming__card gaming__card--2 grid__item grid__item--5-8">
+            <img
+              src="./images/gaming2.svg"
+              alt="img"
+              class="gaming__img"
+            >
+
+            <h3 class="gaming__card-title">REAL ESTATE</h3>
+
+            <p class="gaming__text text1">Desighn architectural projects in a deeply realistic environment allowing visitors to freely walk around, and feel their vibe</p>
+
+          </a>
+
+          
+          <a href="#" class="gaming__card gaming__card--3 grid__item grid__item--9-12">
+            <img
+              src="./images/gaming3.svg"
+              alt="img"
+              class="gaming__img"
+            >
+
+            <h3 class="gaming__card-title">FITNESS</h3>
+
+            <p class="gaming__text text1">Combine business with pleasure, and discover countless ways to stay fit while playing your favorite VR Games!</p>
+
+          </a>
+
+           
+          <a href="#" class="gaming__card gaming__card--4 grid__item grid__item--13-16">
+            <img
+              src="./images/gaming4.svg"
+              alt="img"
+              class="gaming__img"
+            >
+
+            <h3 class="gaming__card-title">SOCIAL INTERACTIONS</h3>
+
+            <p class="gaming__text text1">Hang out with your friends in the virtual world when you can’t meet space requirements</p>
+
+          </a>
+
+        </div>
+      </section>
+
+      <section class="product" id="product">
+        <div class="container product__wrapper grid">
+
+          <h2 class="product__mobile-title grid__item grid__item--1-3">
+            ABOUT
+            <span class="text-blue gaming__title">PRODUCT</span>
+          </h2>
+
+          <div class="product__info grid__item grid__item--12-16">
+
+            <h2 class="product__title">
+              ABOUT
+              <span class="text-blue gaming__title">PRODUCT</span>
+            </h2>
+
+            <p class="product__text text1">KAT loco is a foot-based VR locomotion system that gives complete physical control over lower-body actions, allowing you to freely walk, run, and carry out just any other movement in virtual reality.
+            </p>
+
+            <button
+              class="product__button product__button--active"
+              onclick="togglePlay()"
+              id="button"
+            >
+              <img
+                src="./images/play.svg"
+                alt="img"
+                class="product__img"
+              >
+            </button>
+
+            <button
+              class="product__button"
+              onclick="togglePlay1()"
+              id="button1"
+            >
+              <img
+                src="./images/play.svg"
+                alt="img"
+                class="product__img"
+              >
+            </button>
+          </div>
+
+          <p class="product__count text1 grid__item grid__item--3-3" id="count">1/2</p>
+
+          <div class="product__video-container grid__item grid__item--4-10">
+
+            <video
+              id="player"
+              src="./images/video1.mp4#t=3,80"
+              class="product__video product__video--active"
+            >
+            </video>
+            
+            <video
+              id="player1"
+              src="./images/video2.mp4#t=0,197"
+              class="product__video"
+            >
+            </video>
+
+            <div class="product__nav">
+              <a class="product__link product__link--active text" id="productLink1">Previous</a>
+            
+              <a class="product__link text" id="productLink2">Next</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about__wrapper grid">
+
+          <div class="about__info grid__item grid__item--2-7">
+            <p class="about__suptitle text1 grid__item grid__item--2-2">Hello,</p>
+
+            <h2 class="about__title grid__item grid__item--2-6">
+              <img
+                src="./images/about-title1.png"
+                alt="title"
+                class="about__img"
+              >
+            </h2>
+            
+            <p class="about__text text1 grid__item grid__item--2-7">KAT VR is an independent company dedicated to the research, development, and sales of VR Locomotion products and solutions. Founded in 2013, we have quickly grown to become one of the world’s leading professional suppliers of VR games’ & simulations’ equipment </p>
+          </div>
+
+          <div class="about__about-wrapper grid__item grid__item--9-16">
+
+            <div class="about__about">
+              <img
+                src="./images/about1.png"
+                alt="img"
+                class="about__img"
+              >
+            </div>
+            
+            <div class="about__about">
+              <img
+                src="./images/about2.png"
+                alt="img"
+                class="about__img"
+              >
+            </div>
+
+            <div class="about__about">
+              <img
+                src="./images/about3.png"
+                alt="img"
+                class="about__img"
+              >
+            </div>
+
+            <div class="about__about">
+              <img
+                src="./images/about4.png"
+                alt="img"
+                class="about__img"
+              >
+            </div>
+
+            <div class="about__about">
+              <img
+                src="./images/about5.png"
+                alt="img"
+                class="about__img"
+              >
+            </div>
+
+            <div class="about__about">
+              <img
+                src="./images/about6.png"
+                alt="img"
+                class="about__img"
+              >
+            </div>
+
+            <div class="about__about">
+              <img
+                src="./images/about7.png"
+                alt="img"
+                class="about__img"
+              >
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="tech" id="tech">
+        <div class="container tech__wrapper grid">
+
+          <h2 class="tech__title grid__item grid__item--12-14">
+            TECH
+            <span class="text-blue tech__title">SPECS</span>
+          </h2>
+
+          <div class="tech__info grid__item grid__item--3-15">
+            <img
+              src="./images/tech-all.png"
+              alt="img"
+              class="tech__bg"
+            >
+          </div>
+
+          <img
+            src="./images/tech.png"
+            alt="img"
+            class="tech__mobile-img grid__item grid__item--2-5"
+          >
+
+          <svg
+            class="tech__svg tech__svg--1"
+            width="61"
+            height="61"
+            viewBox="0 0 34 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="svg1"
+          >
+            <circle
+              cx="17"
+              cy="17"
+              r="17" 
+              fill="#05C2DF"
+              class="tech__path"
+            >
+            </circle>
+
+            <circle
+              cx="17"
+              cy="17"
+              r="16"
+              stroke="white"
+              stroke-opacity="0.14"
+              stroke-width="2"
+              class="tech__path"
+            >
+            </circle>
+
+            <path
+              d="M17 11L17 23"
+              stroke="white"
+              class="tech__path"
+            >
+            </path>
+
+            <path
+              d="M23 17L11 17"
+              stroke="white"
+              class="tech__path"
+            >
+            </path>
+          </svg>
+
+          <svg
+            class="tech__svg tech__svg--2"
+            width="61"
+            height="61"
+            viewBox="0 0 34 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="svg2"
+          >
+            <circle
+              cx="17"
+              cy="17"
+              r="17" 
+              fill="#05C2DF"
+              class="tech__path"
+            >
+            </circle>
+
+            <circle
+              cx="17"
+              cy="17"
+              r="16"
+              stroke="white"
+              stroke-opacity="0.14"
+              stroke-width="2"
+              class="tech__path"
+            >
+            </circle>
+
+            <path
+              d="M17 11L17 23"
+              stroke="white"
+              class="tech__path"
+            >
+            </path>
+
+            <path
+              d="M23 17L11 17"
+              stroke="white"
+              class="tech__path"
+            >
+            </path>
+          </svg>
+
+          <svg
+            class="tech__svg tech__svg--3"
+            width="61"
+            height="61"
+            viewBox="0 0 34 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="svg3"
+          >
+            <circle
+              cx="17"
+              cy="17"
+              r="17" 
+              fill="#05C2DF"
+              class="tech__path"
+            >
+            </circle>
+
+            <circle
+              cx="17"
+              cy="17"
+              r="16"
+              stroke="white"
+              stroke-opacity="0.14"
+              stroke-width="2"
+              class="tech__path"
+            >
+            </circle>
+
+            <path
+              d="M17 11L17 23"
+              stroke="white"
+              class="tech__path"
+            >
+            </path>
+
+            <path
+              d="M23 17L11 17"
+              stroke="white"
+              class="tech__path"
+            >
+            </path>
+          </svg>
+
+          <div class="tech__pop-up tech__pop-up--1" id="popUp1">
+            <h3 class="tech__subtitle">SENSOR</h3>
+
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 19 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="tech__svg tech__cross cross1"
+              id="cross1"
+            >
+              <line
+                x1="1.35355"
+                y1="0.995568"
+                x2="18.2206"
+                y2="17.8626"
+                stroke="white"
+                class="tech__path"
+              >
+              </line>
+
+              <path
+                d="M1.13405 17.8672L18.0011 1.00011" 
+                stroke="white"
+                class="tech__path"
+              >
+              </path>
+            </svg>
+
+            <p class="tech__text text1">Weight: 35g/1.23oz each
+              Dimension: 50mm/1.97in
+              24mm/0.94in
+              Light: LED lights
+            </p>
+          </div>
+
+          <div class="tech__pop-up tech__pop-up--2" id="popUp2">
+            <h3 class="tech__subtitle">CONNECTION</h3>
+
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 19 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="tech__svg tech__cross cross2"
+              id="cross2"
+            >
+              <line
+                x1="1.35355"
+                y1="0.995568"
+                x2="18.2206"
+                y2="17.8626"
+                stroke="white"
+                class="tech__path"
+              >
+              </line>
+
+              <path
+                d="M1.13405 17.8672L18.0011 1.00011" 
+                stroke="white"
+                class="tech__path"
+              >
+              </path>
+            </svg>
+
+            <p class="tech__text text1">Wireless: Bluetooth 4.2
+              Signal range: 5m
+              Receiver: USB 2.0 and above
+            </p>
+          </div>
+
+          <div class="tech__pop-up tech__pop-up--3" id="popUp3">
+            <h3 class="tech__subtitle">BATTERRIES</h3>
+
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 19 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="tech__svg tech__cross cross3"
+              id="cross3"
+            >
+              <line
+                x1="1.35355"
+                y1="0.995568"
+                x2="18.2206"
+                y2="17.8626"
+                stroke="white"
+                class="tech__path"
+              >
+              </line>
+
+              <path
+                d="M1.13405 17.8672L18.0011 1.00011" 
+                stroke="white"
+                class="tech__path"
+              >
+              </path>
+            </svg>
+
+            <p class="tech__text text1">Type: Lthium-lon polymer batteries 
+              Capacity: 370mAh
+              Battery life: 10h of continuous use 150 hours on stand by
+              Charging: Fast charging - 1 hour
+              Charging voltage and current: 5V = 0.5A
+            </p>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="why" id="benefits">
+        <div class="container why__wrapper grid">
+
+          <h2 class="why__title grid__item grid__item--7-10">
+            WHY
+            <span class="text-blue why__title">KAT LOCO?</span>
+          </h2>
+
+          <a href="#" class="why__card why__card--1 grid__item grid__item--1-4">
+            <img
+              src="./images/why1.svg"
+              alt="img"
+              class="why__img"
+            >
+
+            <h3 class="why__card-title">UNIVERSALLY COMPATIBLE</h3>
+
+            <p class="text1 why__text">KAT Loco offers universal compatibility across all major VR headsets and platforms allowing you to play any VR game with support for Free Locomotion</p>
+
+          </a>
+
+          <a href="#" class="why__card why__card--2 grid__item grid__item--7-10">
+            <img
+              src="./images/why2.svg"
+              alt="img"
+              class="why__img"
+            >
+
+            <h3 class="why__card-title">VR/PC CONTROL PANEL</h3>
+
+            <p class="text1 why__text">Our Multifunctional Software allows for quick access to KAT Loco’s control panel both from a computer desktop, and directly from your VR headset.</p>
+
+          </a>
+
+          <a href="#" class="why__card why__card--3 grid__item grid__item--13-16">
+            <img
+              src="./images/why3.svg"
+              alt="img"
+              class="why__img"
+            >
+
+            <h3 class="why__card-title">WIRELESS SENSORS</h3>
+
+            <p class="text1 why__text">What makes it even more advanced, KAT Loco is entirely wireless, and comes with a complete system of algorithms, super durable batteries and more!</p>
+
+          </a>
+
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+
+        <div class="container contact__wrapper grid">
+
+          <div class="contact__left grid__item grid__item--1-5">
+
+            <p class="contact__suptitle grid__item grid__item--1-3 text1">Have any questions?</p>
+
+            <h2 class="contact__title grid__item grid__item--1-4">
+              GET IN
+              <span class="text-blue contact__title">TOUCH</span>
+            </h2>
+
+            <p class="contact__text text1 grid__item grid__item--1-5">Our manager will reply you within 15 minutes</p>
+
+            <br>
+
+            <p class="contact__info text1 grid__item grid__item--1-3">
+            
+              <a
+                href="tel:+86-0571-86105373"
+                class="contact__link"
+                target="_blank"
+              >
+                +86-0571-86105373
+              </a>
+              <br>
+              <a
+                href="https://www.kat-vr.com/"
+                class="contact__link"
+                target="_blank"
+              >
+                global@katvr.com
+              </a>
+              <br>
+              <a
+                href="mailto:overseas@katvr.com"
+                class="contact__link"
+                target="_blank"
+              >
+                overseas@katvr.com
+              </a>
+            </p>
+          </div>
+
+          <form
+            class="contact__form grid__item grid__item--9-16"
+            id="form"
+          >
+
+            <label for="name" class="contact__label">
+
+              <p id="invalid1" class="contact__invalid text2">Please, fill your name*</p>
+
+              <input
+                id="name"
+                type="text"
+                class="contact__input"
+                placeholder="Name*"
+                required
+              >
+            </label>
+
+            <label for="email" class="contact__label">
+
+              <p id="invalid2" class="contact__invalid text2">Incorrect email format*</p>
+
+              <input
+                id="email"
+                type="email"
+                class="contact__input"
+                placeholder="Email*"
+                required
+
+              >
+            </label>
+
+            <label for="phone" class="contact__label">
+
+              <p id="invalid3" class="contact__invalid text2">Incorrect phone format*</p>
+
+              <input
+                id="phone"
+                type="phone"
+                class="contact__input"
+                placeholder="Phone*"
+                required
+              >
+            </label>
+
+            <label for="message">
+              <textarea
+                name="message"
+                id="message" 
+                class="contact__textarea contact__input"
+                placeholder="Message"
+              >
+              </textarea>
+            </label>
+
+          </form>
+
+          <button
+            class="contact__button button grid__item grid__item--9-11"
+            form="form"
+          >
+            Contact Us
+          </button>
+
+          <a href="#main" class="contact__link grid__item grid__item--16-16 contact__arrow">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 49C38.2548 49 49 38.2548 49 25C49 11.7452 38.2548 1 25 1C11.7452 1 1 11.7452 1 25C1 38.2548 11.7452 49 25 49Z"
+                stroke="#05C2DF"
+                stroke-miterlimit="10"
+                class="contact__toTop contact__toTop--1"
+              >
+              </path>
+              <path
+                d="M32.68 28.8402L25 20.2002L17.32 28.8402"
+                stroke="#05C2DF"
+                stroke-width="0.5"
+                class="contact__toTop contact__toTop--2"
+              >
+              </path>
+            </svg>
+          </a>
+
+          <p class="contact__mobile text1 grid__item grid__item--1-3">Our manager will reply you within 15 minutes</p>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__wrapper grid">
+
+        <a href="#main" class="footer__link grid__item grid__item--1-1">
+          <img
+            src="./images/logo.svg"
+            alt="logo"
+            class="footer__logo"
+          >
+        </a>
+
+        <nav class="footer__nav grid__item grid__item--7-10">
+          <a href="#about" class="footer__link">About</a>
+          <a href="#tech" class="footer__link">Tech</a>
+          <a href="#benefits" class="footer__link">Benefits</a>
+          <a href="#contact" class="footer__link">Contact</a>
+        </nav>
+
+
+        <div class="footer__socials grid__item grid__item--14-16">
+
+          <div class="footer__mobile grid__item--2-2">
+            <a
+              href="tel:+86-0571-86105373"
+              class="footer__info"
+              target="_blank"
+            >
+              +86-0571-86105373
+            </a>
+            <a
+              href="https://www.kat-vr.com/"
+              class="footer__info"
+              target="_blank"
+            >
+              global@katvr.com
+            </a>
+            <a
+              href="mailto:overseas@katvr.com"
+              class="footer__info"
+              target="_blank"
+            >
+              overseas@katvr.com
+            </a>
+          </div>
+
+          <div class="footer__icons">
+            <a
+              href="https://www.facebook.com/"
+              class="footer__link"
+              target="_blank"
+            >
+              <svg
+                width="7"
+                height="12"
+                viewBox="0 0 7 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer__icon"
+              >
+                <path
+                  d="M1.6879 6.85308V12H3.88284V6.85308H5.73635L6.10217 4.29384H3.88284V2.55924H6.10217V0H3.88284C2.67248 0 1.6879 1.14799 1.6879 2.55924V4.29384H0.224609V6.85308H1.6879Z"
+                  fill="white"
+                  class="footer__path"
+                >
+                </path>
+              </svg>
+            </a>
+
+            <a
+              href="https://www.twitter.com/"
+              class="footer__link"
+              target="_blank"
+            >
+              <svg
+                width="16"
+                height="11"
+                viewBox="0 0 16 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer__icon"
+              >
+                <path
+                  d="M6.21665 11C5.58124 11 4.92723 10.9529 4.26929 10.8586C3.11047 10.6923 1.93741 10.1378 1.60547 9.97183L0.734863 9.53644L1.67744 9.25292C2.70779 8.94304 3.33456 8.75078 4.11044 8.44972C3.33355 8.10559 2.7348 7.48656 2.44658 6.68633L2.22731 6.07745L2.40712 6.10257C2.23661 5.94538 2.10198 5.78582 1.99761 5.64073C1.62643 5.12505 1.42991 4.49494 1.47172 3.95497L1.51298 3.4235L1.86084 3.54675C1.71409 3.29327 1.60804 3.02257 1.54571 2.73884C1.39381 2.0469 1.52094 1.31178 1.90377 0.668958L2.20679 0.160153L2.61205 0.605383C3.89374 2.01367 5.51712 2.84907 7.44386 3.09363C7.36516 2.59743 7.42413 2.11857 7.6193 1.68934C7.84654 1.18956 8.25078 0.765756 8.78799 0.463672C9.38461 0.128263 10.1081 -0.0342637 10.8253 0.00603471C11.5861 0.048794 12.2769 0.309554 12.8255 0.760629C13.0935 0.696952 13.2909 0.628967 13.5577 0.537091C13.7182 0.481822 13.9003 0.419067 14.1281 0.347289L14.9675 0.0827349L14.4201 1.51276C14.4562 1.50999 14.4934 1.50764 14.5323 1.5061L15.4287 1.46898L14.8989 2.13129C14.8685 2.16923 14.8608 2.17999 14.85 2.19486C14.8073 2.25372 14.7542 2.32693 14.027 3.21514C13.8449 3.43755 13.754 3.72722 13.7709 4.03095C13.8354 5.18514 13.6806 6.22941 13.3105 7.13464C12.9605 7.99106 12.4181 8.72586 11.6987 9.31865C10.8083 10.052 9.67305 10.5542 8.32421 10.8109C7.66257 10.9368 6.95206 11 6.21665 11Z"
+                  fill="white"
+                  class="footer__path"
+                >
+                </path>
+              </svg>
+            </a>
+
+            <a
+              href="https://www.youtube.com/"
+              class="footer__link"
+              target="_blank"
+            >
+              <svg
+                width="14"
+                height="11"
+                viewBox="0 0 14 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer__icon"
+              >
+                <path
+                  d="M11.9162 0H2.09609C0.974322 0 0.0615234 0.931828 0.0615234 2.07698V8.72331C0.0615234 9.86847 0.974322 10.8003 2.09609 10.8003H11.9162C13.038 10.8003 13.9508 9.86847 13.9508 8.72331V2.07698C13.9508 0.931828 13.038 0 11.9162 0ZM4.9716 8.26411V2.61732L9.86801 5.39409L4.9716 8.26411Z"
+                  fill="white"
+                  class="footer__path"
+                >
+                </path>
+                <path
+                  d="M5.78564 4.02881V6.8291L8.2135 5.40618L5.78564 4.02881Z"
+                  fill="white"
+                  class="footer__path"
+                >
+                </path>
+              </svg>
+            </a>
+
+            <a
+              href="https://www.reddit.com/"
+              class="footer__link"
+              target="_blank"
+            >
+              <svg
+                width="15"
+                height="14"
+                viewBox="0 0 15 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="footer__icon"
+              >
+                <path
+                  d="M1.27183 8.54572C1.23646 8.75627 1.21177 8.96943 1.21177 9.1875C1.21177 11.8411 3.96881 14 7.29211 14C10.6154 14 13.3189 11.8411 13.3189 9.1875C13.3189 8.96943 13.2942 8.75627 13.2588 8.54572C13.7799 8.24995 14.1224 7.66582 14.1224 7C14.1224 6.03488 13.4016 5.25 12.5153 5.25C12.1103 5.25 11.7297 5.41532 11.4379 5.70356C10.428 4.93691 9.0881 4.44928 7.60663 4.38776L8.37546 1.14035L10.1093 1.80093C10.1347 2.74212 10.8414 3.5 11.7117 3.5C12.5981 3.5 13.3189 2.71512 13.3189 1.75C13.3189 0.78488 12.5981 0 11.7117 0C11.0938 0 10.5625 0.385775 10.2937 0.943929L7.81589 0.000455729L6.7746 4.39596C5.37338 4.49167 4.05649 4.97189 3.09273 5.70356C2.80091 5.41532 2.42037 5.25 2.01534 5.25C1.12901 5.25 0.408203 6.03488 0.408203 7C0.408203 7.66582 0.750766 8.24995 1.27183 8.54572ZM9.70281 7C10.3674 7 10.9082 7.5888 10.9082 8.3125C10.9082 9.0362 10.3674 9.625 9.70281 9.625C9.03819 9.625 8.49746 9.0362 8.49746 8.3125C8.49746 7.5888 9.03819 7 9.70281 7ZM9.53101 10.8649L9.87461 11.6553C9.12054 12.0445 8.22751 12.25 7.29211 12.25C6.3567 12.25 5.4101 12.0445 4.65602 11.6553L4.99963 10.8648C6.29455 11.5322 8.23609 11.5322 9.53101 10.8649ZM4.82783 7C5.49245 7 6.03318 7.5888 6.03318 8.3125C6.03318 9.0362 5.49245 9.625 4.82783 9.625C4.16321 9.625 3.62248 9.0362 3.62248 8.3125C3.62248 7.5888 4.16321 7 4.82783 7Z"
+                  fill="white"
+                  class="footer__path"
+                >
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      
+      </div>
+
+      </div>
+    </footer>
+    
+    <script>
+      function togglePlay() {
+        console.log(1);
+        const player = document.getElementById('player');
+
+        if(player.paused) {
+          player.play();
+        } else {
+          player.pause();
+        }
+      }
+
+      function togglePlay1() {
+        console.log(2);
+        const player1 = document.getElementById('player1');
+
+        if(player1.paused) {
+          player1.play();
+        } else {
+          player1.pause();
+        }
+      }
+    </script>
+
   </body>
 </html>
